@@ -1,23 +1,25 @@
-<header class="text-center my-5">
-    <h1>STORE</h1>
-  
+<header class="text-center my-5 text-bg-secondary p-5 mt-0">
+    <h1>STORE EXCLUSIVE</h1>
 </header>
+   
 <main class="container d-flex flex-wrap justify-content-center gap-5">
     @for(elemento of todosLosDatos; track elemento.id){
-        <div class="card" style="width:12rem;">
+        <div class="card " style="width: 15rem;">
         <h3 class="card-title">{{elemento.category}}</h3>
-        <img src="{{elemento.image}}" class="card-img-top" alt="foto de {{elemento.description}}">
+        <img src="{{elemento.image}}" class="card-img-top tamañoImagen" alt="foto de {{elemento.description}}">
         <div class="card-body">
         <h5 class="card-title">{{elemento.title}}</h5>
-        <p class="card-text fs-6 text-black">description: {{elemento.description}}</p>
+        <!--<div class="parrafo">
+        <p class="card-text fs-6 text-black h-5 ">description: {{elemento.description}}</p></div>-->
             </div>
             <ul class="list-group list-group-flush list-unstyled text-center">
-                <li>{{elemento.rating}}rating </li> 
+                <li>{{elemento.rating.count}} count</li>
+                <li>{{elemento.rating.rate}} rate</li>  
               <li>{{elemento.price}} price </li>
-              <a href="#" class="btn:hover bg-primary-subtle text-black">BUYS NOW</a>
+              <a href="#" class="btn btn-secondary colorBoton">BUYS NOW</a>
             </ul>
           </div>
     }
 </main>
-<footer class="text-center my-5">&copy; 2024</footer>
+<footer class="text-center my-5 text-bg-secondary p-5 mb-0">STORE EXCLUSIVE &copy; 2024</footer>
 <!-- <router-outlet></router-outlet> -->
