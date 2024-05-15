@@ -1,2 +1,3 @@
 #CREANDO CON ANGULAR 
-*Consumiendo API de terceros "tienda online"
+#Consumiendo API de terceros "tienda online"
+@Deissy Esquivia Perez 

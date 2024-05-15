@@ -11,7 +11,7 @@ import { DataService } from './services/data.service';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  //cuando creo un componente esta clase viene por defecto vacia en este caso lo que hoce fue crear el componente y traer el inyectable
+  //cuando creo un componente esta clase viene por defecto vacia en este caso lo que hice fue crear el componente y traer el inyectable
   dataService =inject(DataService);
   //creo una variable que se llama dataService que me trae la informacion del inyectable de DataService que es el servicio que hice de primera
   todosLosDatos: any[]=[];//creo un atributo donde voy almacenar todos los datos de mi apis por el momento quedan como un arreglo vacio
